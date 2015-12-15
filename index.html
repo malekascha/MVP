@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
-      html, body { height: 100%; margin: 0; padding: 0; }
-      #map { height: 80%; width: 80%; }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script type="text/javascript">
-
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 40.626945, lng: -98.700977},
-    zoom: 3
-  });
-}
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBff-T7Dol5atGYYWd3pUGxsSNZJ8s2Ocg">
     </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBff-T7Dol5atGYYWd3pUGxsSNZJ8s2Ocg&callback=initMap">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="scripts/controllers/mapController.js"></script>
+    <script src="scripts/app.js"></script>
+  </head>
+  <body ng-app="mvpApp">
+    <div ng-view></div>
+    <script type="text/javascript">
     </script>
   </body>
 </html>

@@ -5,7 +5,20 @@
 }
 
 #map { 
-  height: 80%; 
-  width: 50%;
+  height: 800px; 
+  width: 95%;
   margin: 0 auto;
+}
+
+.info-header{
+  text-align: center;
+}
+
+#post-tab p{
+  font-size: 9px;
+}
+
+img.in-tab{
+  width:365px;
+  margin-bottom: 15px;
 }
