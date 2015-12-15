@@ -92,3 +92,7 @@ body {
   height:90%;
   margin: 0 auto;
 }
+
+#info-tabs{
+  list-style: none;
+}

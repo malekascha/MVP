@@ -42,6 +42,9 @@ angular.module('mvpApp.map', [])
         }
       }
     })
+    vm.sample = function(){
+      console.log('sample');
+    }
     vm.infoDisplay = infoDisplay.windowDisplay;
     // vm.infoDisplay = function(marker, a){
     //   console.log(marker, a, 'this is a label');
