@@ -1,5 +1,5 @@
 angular.module('mvpApp.map', [])
-  .controller('mapController', function (infoDisplay) {
+  .controller('mapController',function (infoDisplay) {
     var vm = this;
     vm.marks = [];
     var positions = [
@@ -42,12 +42,13 @@ angular.module('mvpApp.map', [])
         }
       }
     })
-    vm.sample = function(){
-      console.log('sample');
-    }
-    vm.infoDisplay = infoDisplay.windowDisplay;
-    // vm.infoDisplay = function(marker, a){
-    //   console.log(marker, a, 'this is a label');
-    // }
-    vm.currentMarker = vm.marks[0]
+    angular.element(document).ready(function(){
+      var canvas = document.getElementById('map');
+      var options = {
+        center: new google.maps.LatLng(44.5403, -78.5463),
+        zoom: 2
+      }
+      vm.map = new google.maps.Map(canvas, options);
+    })
+     
   });
