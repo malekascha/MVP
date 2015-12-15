@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+  </head>
+  <body>
+    <div id="map"></div>
+    <script type="text/javascript">
+
+      var map;
+      function setMap(lat, lng, zoom) {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: lat, lng: lng},
+          zoom: zoom
+        });
+      }
+
+      setMap(40.626945, -98.700977, 3);
+
+    </script>
+  </body>
+</html>

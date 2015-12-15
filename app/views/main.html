@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <div id="map">
+    <map default-style="true" zoom="1">
+      <marker ng-repeat="p in vm.marks" id="{{p.id}}" position="{{p.position}}" on-click="vm.infoDisplay(p, vm);">
+      </marker>
+      
+      <info-window id="post-data" position="{{vm.currentMarker.position}}">
+        <h3>{{vm.currentMarker.post.title}}</h3>
+        <div id="tabs">
+          <ul>
+            <li><a href="#post-tab">Post</a></li>
+            <li><a href="#image-tab">Images</a></li>
+          </ul>
+          <div id="post-tab">
+            <p style="font-size:9px">{{vm.currentMarker.post.text}}</p>
+          </div>
+          <div id="image-tab">
+          </div>
+        </div>
+     </info-window>
+    </map>
+  </div>
+</div>
+
