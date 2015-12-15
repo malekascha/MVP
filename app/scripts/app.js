@@ -39,6 +39,7 @@ angular
     var displayMethods = {};
     displayMethods.windowDisplay = function(a, marker, context){
      context.currentMarker = marker;
+     console.log($rootScope.map);
      $rootScope.map.showInfoWindow('post-data');
      // $('#tabs').tabs();
     }
