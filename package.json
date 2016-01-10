@@ -6,10 +6,16 @@
   "dependencies": {
     "angular": "^1.4.8",
     "angular-route": "^1.4.8",
+    "body-parser": "^1.14.1",
     "bootstrap": "^3.3.6",
+    "express": "^4.13.3",
     "http-server": "^0.8.5",
     "jquery": "^2.1.4",
-    "jquery-ui": "^1.10.5"
+    "jquery-ui": "^1.10.5",
+    "mongodb": "^2.0.52",
+    "mongoose": "^4.3.1",
+    "morgan": "^1.6.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
