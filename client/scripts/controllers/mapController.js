@@ -78,7 +78,7 @@ angular.module('mvpApp.map', [])
       var canvas = document.getElementById('map');
       var options = {
         center: new google.maps.LatLng(44.5403, -78.5463),
-        zoom: 2
+        zoom: 3
       }
       vm.map = new google.maps.Map(canvas, options);
       var infoWindow = new google.maps.InfoWindow({

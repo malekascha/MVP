@@ -7,7 +7,6 @@ var app = express();
 
 require('./config/middleware.js')(app, express);
 
-// mongoose.connect('mongodb://localhost/blog');
 
 
 

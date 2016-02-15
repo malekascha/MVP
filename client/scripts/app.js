@@ -7,7 +7,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'scripts/views/main.html',
+        templateUrl: 'scripts/views/map.html',
         controller: 'mapController',
         controllerAs: 'vm'
       })

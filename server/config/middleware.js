@@ -1,7 +1,6 @@
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var path = require('path');
-var express = require('express');
 
 module.exports = function(app, express){
 
@@ -9,10 +8,11 @@ module.exports = function(app, express){
 
   app.use(express.static(path.join(__dirname,"../../client")));
 
-  app.get('/',function(req, res){
-    // res.sendFile(__dirname + "../../client/index.html");
-    // res.send('Hello world!');
-  })
+  var mapRouter = express.Router();
+
+  app.use('/map', mapRouter);
+
+  require('../routes/mapRoutes.js')(mapRouter);
 
 
 }
