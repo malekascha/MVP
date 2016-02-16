@@ -1,4 +1,0 @@
-*.log
-node_modules/*
-images/*
-client/node_modules/*
